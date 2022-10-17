@@ -1,0 +1,11 @@
+INSERT INTO `new_assign`.`user`
+(`roll_number`,
+`eMail`,
+`userName`,
+`passWord`)
+VALUES
+(187001, 'adam@hotmail.com', 'Adam31', 'passWord'),
+(187002, 'kaneWill01@outlook.com', 'KaneWillams', 'myWord321')
+(187003, 'Mhussey47@gmail.com', 'MikeHussey', 'myWorPassd@963');
+ 
+//to execute: select * from user;
