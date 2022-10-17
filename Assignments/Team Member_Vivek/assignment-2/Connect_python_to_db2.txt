@@ -1,0 +1,29 @@
+Connect python with db2
+
+Conn-ibm_db.connect("DATABASE-bludb;HOSTNAME-824dfd4d-99de-440d
+
+9991
+
+629c01b3832d.bs2io90108kqb1od8lcg.databases appdomain.cloud:PORT-30119,5E
+
+CURITY SSL
+
+SSLServerCertificate-DigiCertGlobal RootCA.crt;UID=vq43963;PWD-8snsG112s
+
+BigRhVN","
+
+From flask import Flask, render template, request, redirect, url for, session
+
+From flask mysqldb import MySQL
+
+Import MySQLdb.cursors
+
+import reapp = Flask_name_
+
+App secret_key='your secret key
+
+App.config MYSQL HOST] = localhost
+
+App.conf MYSQL USER") = 'root
+
+App.config MYSQL PASSWORD] your password"
