@@ -1,0 +1,12 @@
+from flask import Flask
+from auth import auth_blueprint
+from auth import auth_app
+from posts import post_blueprint
+ 
+app = Flask(__name__)
+app.register_blueprint(auth_blueprint)
+@auth_app.route('/auth/')
+def index():
+                return "Hello Thread!"
+app.register_blueprint(post_blueprint)
+app.run()
