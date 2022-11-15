@@ -1,0 +1,57 @@
+$ ibmcloud login
+
+$ ibmcloud cr namespace-add <contain_zone>
+
+$ ibmcloud cr contain_zone-list -v
+
+
+$ docker pull <sample_img>:<tag>
+
+
+$ docker pull hello-world:latest
+
+
+$ podman pull <sample_img>:<tag>
+
+
+
+$ podman pull hello-world:latest
+
+
+
+$ docker tag <sample_img>:<tag> <region>.icr.io/<contain_zone>/<new_image_repo>:<new_tag>
+
+
+
+$ docker tag hello-world:latest uk.icr.io/contain_zone/hw_repo:1
+
+
+
+$ podman tag <sample_img>:<tag> <region>.icr.io/<contain_zone>/<new_image_repo>:<new_tag>
+   
+
+
+
+$ podman tag hello-world:latest uk.icr.io/contain_zone/hw_repo:1
+
+
+
+$ ibmcloud cr login --client docker
+
+
+
+$ ibmcloud cr login --client podman
+
+
+
+$ docker push <region>.icr.io/<contain_zone>/<image_repo>:<tag>
+
+
+$ docker push uk.icr.io/contain_zone/hw_repo:1
+
+
+$ podman push <region>.icr.io/<contain_zone>/<image_repo>:<tag>
+
+
+
+$ podman push uk.icr.io/contain_zone/hw_repo:1
